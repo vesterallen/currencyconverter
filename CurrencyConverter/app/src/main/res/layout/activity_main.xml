@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.currencyconverter.MainActivity"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/inputAmount"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/inputAmount" />
+
+    <RadioGroup
+        android:layout_width="146dp"
+        android:layout_height="77dp"
+        android:textAlignment="center"
+        android:id="@+id/inputCurrencyType">
+
+        <RadioButton
+            android:text="AUD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ausDollar"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:text="CAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/canDollar"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:text="INR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/indRupee"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+    </RadioGroup>
+
+    <TextView
+        android:text="Convert to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertTo"
+        android:layout_weight="0.04"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/outputCurrencyType">
+
+        <RadioButton
+            android:text="USD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usaDollar"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:text="GBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/briPound"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/convert"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/convert" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/convertedAmount"
+        android:ems="10"
+        android:id="@+id/convertedAmount"
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="@string/clear"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear" />
+</LinearLayout>
